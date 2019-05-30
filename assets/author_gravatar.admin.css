@@ -1,23 +1,11 @@
 /**
  * Author Gravatar
  */
-
-a.gravatar {
-	display: block;
-}
-
-img.gravatar {
-	border-radius: 5px 0 0 5px;
-	display: block;
-	position: relative;
-	right: 0;
-	top: 0;
-	margin: 0;
-	width: 4rem;
-	height: 4rem;
-	z-index: 12;
-}
-
-#session > div {
-	border-radius: 0 5px 5px 0;
+div.gravatar {
+	all: unset;
+	display: flex;
+	position: absolute;
+	border-radius: 100%;
+	overflow: hidden;
+	pointer-events: none;
 }
