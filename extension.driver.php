@@ -32,16 +32,12 @@
 			));
 
 			// create anchor element as parent to the gravatar image
-			$a = new XMLElement('a', $img, array(
-				'href' => SYMPHONY_URL . '/system/authors/edit/' . $author->get('id') . '/',
-				'data-id' => $author->get('id'),
-				'data-name' => $author->get('first_name'),
-				'data-type' => $author->get('user_type'),
+			$div = new XMLElement('div', $img, array(
 				'class' => 'gravatar'
 			));
 
 			// append anchor / gravatar image to backend header element
-			Administration::instance()->Page->Session->appendChild($a);
+			Administration::instance()->Page->Session->appendChild($div);
 		}
 
 		/**
