@@ -41,7 +41,7 @@
 			));
 			
 			// append anchor / gravatar image to backend header element
-			Administration::instance()->Page->Header->appendChild($a);
+			Administration::instance()->Page->Session->appendChild($a);
 		}
 
 		/**
